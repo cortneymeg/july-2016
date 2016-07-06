@@ -1,0 +1,10 @@
+.dotted-border {
+  border: 5px dotted green;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.dashed-border {
+  border: 5px dashed pink;
+  border-radius: 50px;
+}

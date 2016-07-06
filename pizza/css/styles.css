@@ -1,0 +1,55 @@
+/*
+CSS needs 3 things:
+1. selector (div, p, a)
+2. property to change (height, color, width)
+3. value to change it to (80%, 20px, blue)
+*/
+div {
+  background-color: yellow;
+  font-size: 30px;
+}
+
+body {
+  background-color: blue;
+}
+
+ul {
+list-style-type: none;
+}
+
+li {
+display: inline;
+}
+
+p {
+  color: blue;
+}
+
+a {
+  border: 1px solid blue;
+  border-radius: 10%;
+  transition: font-size 1s, color 2ms, transform 5001ms;
+  
+}
+
+/* css pseudo selectors */
+a:hover {
+    background-color: rgba(21, 212, 4, 0.4);
+    text-decoration: none;
+    font-size: 40px;
+    color: red;
+    transform: rotate(3600deg);
+}
+
+#navbar {
+  font-family: monospace;
+}
+
+/* <div class="text-center"> */
+.text-center {
+  text-align: center;
+}
+
+img {
+  transform: rotate(15deg);
+}
