@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Men-yoo</title>
+  <!-- this is html comment -->
+  <style>
+    /*
+    CSS needs 3 things:
+    1. selector (div, p, a)
+    2. property to change (height, color, width)
+    3. value to change it to (80%, 20px, blue)
+    */
+    div {
+      background-color: yellow;
+      font-size: 50px;
+    }
+    
+    body {
+      background-color: blue;
+    }
+  
+    ul {
+    list-style-type: none;
+    }
+    
+    li {
+    display: inline;
+    }
+    
+    p {
+      color: blue;
+    }
+    
+    #navbar {
+      font-family: monospace;
+    }
+    
+    /* <div class="text-center"> */
+    .text-center {
+      text-align: center;
+    }
+    
+    .dotted-border {
+      border: 5px dotted green;
+      border-top-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+    
+    .dashed-border {
+      border: 5px dashed pink;
+      border-radius: 50px;
+    }
+    
+  </style>
+  
+</head>
+<body>
+  
+  <div id="navbar" class="text-center dotted-border">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li>Locations</li>
+      <li>Hours</li>
+    </ul>
+  </div>
+  
+  <!-- id, or a class -->
+  <div class="text-center">
+    <!-- inline style -->
+    <p style="color:red;background-color: pink;">Pepperoni n stuff</p>
+    
+    <img src="../img/cat.jpg" alt="" class="dashed-border">
+    
+  </div>
+  
+</body>
+</html>
