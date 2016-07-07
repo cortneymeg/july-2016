@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Arima+Madurai|Galada';
+
 /*
 CSS needs 3 things:
 1. selector (div, p, a)
@@ -17,7 +19,7 @@ ul {
   list-style-type: none;
 }
 
-li {
+.inline {
   display: inline;
 }
 
@@ -43,6 +45,13 @@ a:hover {
 }
 
 #navbar {
+  z-index: 1;
+  position: fixed;
+  margin: 0 auto;
+  width: 80%;
+  top: 0;
+  left: 0;
+  right: 0;
   font-family: monospace;
   background: red; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
@@ -58,11 +67,35 @@ a:hover {
 
 img {
   transform: rotate(15deg);
+  padding: 20px;
+  /* set position */
+  position: relative;
+  /* gives you 'top' 'bottom' 'left' and 'right' */
+  left: 400px;
+  bottom: -10px;
+  z-index: 0;
 }
+
+
 
 h1 {
   font-size: 72px;
   background: -webkit-linear-gradient(red, black);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: 'Galada', cursive;
+}
+
+#main {
+  position: relative;
+  margin-top: 130px;
+}
+
+#side {
+  background-color: red;
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
