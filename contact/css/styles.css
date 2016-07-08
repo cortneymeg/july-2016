@@ -1,0 +1,60 @@
+@import 'https://fonts.googleapis.com/css?family=Indie+Flower';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Indie Flower', cursive;
+  font-size: 110%;
+}
+
+#form {
+  width: 750px;
+  margin: 0 auto;
+  background-color: #8af5f5;
+  position: relative;
+  height: 500px;
+}
+
+#greeting {
+  text-align: center;
+}
+
+#contact {
+  background-color: #f1fa87;
+  left: 0px;
+}
+
+#message {
+  background-color: #98f182;
+  right: 0;
+  text-align: center;
+}
+
+.input {
+  padding: 10px;
+  position: absolute;
+  width: 375px;
+  height: 630px;
+}
+
+.hr {
+  width: 95%;
+  height: 1px;
+  background-color: #3b0b0b;
+  margin: 5px auto;
+  opacity: 0.5;
+}
+
+#submit-btn {
+  height: 40px;
+  width: 60%;
+  color: purple;
+  background-color: gold;  
+}
+
+
+
+
+
+
+
+

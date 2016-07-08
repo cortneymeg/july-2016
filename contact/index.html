@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="http://cliparts.co/cliparts/kiM/bee/kiMbeebyT.jpg">
+  
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+  <div class="container">
+    
+    <div id="form">
+      
+      <p id="greeting">Please fill out my form =)</p>
+      
+      <form>
+        <div id="contact" class="input">
+          Name: 
+          <input type="text">
+          <div class="hr"></div>
+          <input type="radio" name="gender" value="male"> Male<br>
+          <input type="radio" name="gender" value="female"> Female<br>
+          <!-- <hr> -->
+          <div class="hr"></div>
+          <input type="radio" name="age" value="below 40"> Below 40<br>
+          <input type="radio" name="age" value="above 40"> Above 40
+          <div class="hr"></div>
+          I like:<br>
+          <input type="checkbox" name="breakfast" value="eggs"> eggs<br>
+          <input type="checkbox" name="breakfast" value="bacon"> bacon<br>
+          <div class="hr"></div>
+          Password:<br>
+          <input type="password">
+        </div>
+        
+        <div id="message" class="input">
+          Message: 
+          <textarea name="name" rows="11" cols="20"></textarea>
+          <input type="button" id="submit-btn" value="Submit">
+        </div>
+      </form>
+    </div>
+    
+  </div>
+  
+</body>
+</html>
