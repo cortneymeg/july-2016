@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Bootstrap Form</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>  
+  
+  <style>
+  .bg-blue {
+    background-color: lightblue;
+  }
+  
+  .bg-pink {
+    background-color: pink;
+  }
+  
+  .bg-yellow {
+    background-color: yellow;
+  }
+  
+  .bg-green {
+    background-color: lightgreen;
+  }
+  
+  .jumbotron-main {
+    /*background-image: url("http://images.nationalgeographic.com/wpf/media-live/photos/000/012/cache/stars_1230_600x450.jpg");*/
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/62/Starsinthesky.jpg");
+    background-size: cover;
+    
+    color: white;
+  }
+  </style>
+  
+</head>
+<body>
+  
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Brand</a>
+      </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pokemon <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Another action</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">
+            
+            <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+            
+          </button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>  
+  
+  <div class="jumbotron jumbotron-main">
+    <div class="container">
+      <h1>Hello, world!</h1>
+      <p>...</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div>
+  </div>
+  
+  <div class="container bg-blue">
+    
+    <div class="row">
+      <div class="col-md-12 bg-blue">
+        <div class="panel panel-success">
+          <div class="panel-body">            
+            Plz fill out our formz
+          </div>
+          <div class="panel-footer">Do it now!</div>
+        </div>        
+        
+        
+      </div>
+    </div>
+    
+    <div class="row">
+      
+      <div class="col-sm-6 col-md-6 bg-yellow">
+        <div id="contact" class="input text-center">
+          Name: 
+          <input type="text">
+          <div class="hr"></div>
+          <input type="radio" name="gender" value="male"> Male<br>
+          <input type="radio" name="gender" value="female"> Female<br>
+          <!-- <hr> -->
+          <div class="hr"></div>
+          <input type="radio" name="age" value="below 40"> Below 40<br>
+          <input type="radio" name="age" value="above 40"> Above 40
+          <div class="hr"></div>
+          I like:<br>
+          <input type="checkbox" name="breakfast" value="eggs"> eggs<br>
+          <input type="checkbox" name="breakfast" value="bacon"> bacon<br>
+          <div class="hr"></div>
+          Password:<br>
+          <input type="password">
+        </div>
+      </div>
+      
+      <div class="col-xs-12 col-sm-6 col-md-6 bg-green">
+        <div id="message" class="input">
+          
+          <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">Profile</a></li>
+            <li role="presentation"><a href="#">Messages</a></li>
+          </ul>
+          
+          <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">Love Me</button>
+            <button type="button" class="btn btn-default">Hate Me</button>
+            <button type="button" class="btn btn-default">Don't Care</button>
+          </div>
+          <br>
+          
+          Message: 
+          <textarea name="name" rows="11" cols="20"></textarea>
+          <input type="button" id="submit-btn" value="Submit">
+        </div>
+      </div>
+      
+    </div> <!-- / row -->
+    
+    <div class="row">
+      
+      <div class="col-md-6">
+        
+        <div class="row">
+          <div class="col-md-12">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto aliquam possimus, error fugiat labore fugit, est totam voluptatum dicta cupiditate veniam quaerat vero distinctio saepe doloremque voluptatibus similique quis tempore.
+          </div>
+        </div>
+        
+        <div class="row">
+          
+          <div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quisquam architecto quibusdam, autem consectetur non nihil provident in fuga numquam, beatae officiis impedit eius eum necessitatibus facilis, reiciendis cumque ut.</div>
+          <div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius cum qui autem voluptas et natus id! Odio, iste quidem assumenda beatae animi cumque. Quasi eveniet, accusantium culpa neque quam consequatur.</div>
+          
+        </div>
+        
+      </div>
+      <div class="col-md-6">
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ipsa aperiam quos maiores eum nihil vitae, omnis nam cumque dolorem reprehenderit architecto, consequuntur libero, repudiandae culpa blanditiis, assumenda fuga esse!
+        
+      </div>
+      
+    </div>
+    
+  </div> <!-- / container -->
+  
+  <div class="container-fluid bg-pink">
+    fluids
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</body>
+</html>
