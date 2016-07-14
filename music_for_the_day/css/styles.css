@@ -1,0 +1,22 @@
+body {
+  background-color: #7fd2fb;
+  font-weight: 200;
+}
+
+.navbar-custom {
+  background-color: white;
+  border-bottom: 4px solid #adf08d;
+}
+
+.navbar-default .brand-name {
+  color: #23a213;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #ff95f6;
+  padding: 10px 0;
+}
