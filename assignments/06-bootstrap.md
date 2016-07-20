@@ -1,5 +1,3 @@
-Assignment #6
-
 1. Make sure you have bootstrap imported on an html file (link to it)
 2. Make a simple website with the following components:
 * create a grid system

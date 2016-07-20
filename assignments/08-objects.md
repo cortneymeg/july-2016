@@ -1,6 +1,3 @@
-Assignment #8
-Objects
-
 1. Create a variable called myCat, store an object in it, and assign to it these properties:
 * name - should be a string
 * age - should be a number

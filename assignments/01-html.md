@@ -1,5 +1,3 @@
-Beach Coders Assignment #1
-
 ** If you want a crash course on HTML & CSS on your own time we highly HIGHLY recommend:
     CodeCademy: https://www.codecademy.com/learn/web
   SoloLearn: http://www.sololearn.com/Course/HTML/

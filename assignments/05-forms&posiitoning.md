@@ -1,5 +1,3 @@
-Assignment #5
-
 Let's use what we've learned to create functional forms and arbitrarily positioned elements.
 
 Create a "Contact Me" form

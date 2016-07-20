@@ -1,4 +1,3 @@
-Assignment #2
 Create a "fan" web page about something you are passionate about, be it a tv show, a hobby, or an exotic location
 1. Give the whole page a background-color
 hint: think about what tag contains all the visual content of the page
