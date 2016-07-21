@@ -1,0 +1,24 @@
+#city {
+  font-size: 30px;
+  margin: 20px;
+}
+
+#temp {
+  font-size: 50px;
+  margin: 20px;
+}
+
+#past-temps {
+  position: fixed;
+  top: 30%;
+  left: 10px;
+  width: 100px;
+  height: 200px;
+  background-color: #fafc85;
+  padding: 5px;
+  overflow: scroll;
+}
+
+#past-temps::-webkit-scrollbar { 
+    display: none; 
+}
