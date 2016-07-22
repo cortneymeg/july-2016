@@ -1,0 +1,15 @@
+.title {
+  font-size: 30px;
+  color: #323232;
+}
+
+.rating {
+  margin: 10px;
+}
+
+.hr {
+  width: 90%;
+  height: 2px;
+  background-color: #303030;
+  margin: 0 auto;
+}

@@ -3,7 +3,7 @@
 <head>
   
   <meta charset="UTF-8">
-  <title>Weather</title>
+  <title>Television</title>
   
   <!-- favicon -->
   <link id="favicon" rel="shortcut icon" type="image/png" />
@@ -17,28 +17,44 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
   
-  <!-- Responsive Voice -->
-  <script src="js/responsivevoice.js"></script>
-  
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   
   <!-- Bootstrap JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    
+  
   <!-- Custom JS -->
   <script src="js/scripts.js" charset="utf-8"></script>
-    
+  
 </head>
 <body>
   
   <div class="container">
+    <br>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="input-group">
+          <input id="show-title" type="text" class="form-control" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go!</button>
+          </span>
+        </div><!-- /input-group -->
+      </div>
+    </div>
     
-    <div id="city" class="text-center"></div>
+    <div class="row">
+      <div class="col-md-6">
+        <div id="show-container">
+          <!-- shows go here -->
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div id="cast-container">
+          <!-- cast goes here -->
+        </div>
+      </div>
+    </div>
     
-    <div id="temp" class="text-center"></div>
-    
-    <div id="past-temps" class="text-center"></div>
     
   </div>
   

@@ -16,8 +16,8 @@ function updateTemp() {
     
     var $tempDiv = $("#temp");
     var $pastTempsDiv = $("#past-temps");
-        
-
+    
+    
     var temp = weatherData.temp_f;
     var imgSrc = weatherData.icon_url;
     
@@ -26,17 +26,14 @@ function updateTemp() {
     var imgStr = "<img id=weather-icon src=" + imgSrc + " alt=weather />";
     
     $tempDiv.animateCss("bounceOut");
-    // $tempDiv.hide();   
-    $tempDiv.html(imgStr + " " + temp + "&deg;");
-    // $tempDiv.show();
-    $tempDiv.animateCss("bounceInLeft");
+    
+    $tempDiv.html(imgStr + " " + temp + "&deg;");        
     
     $pastTempsDiv.prepend(temp + "&deg;" + "<br>");    
     
     // check time
     var today = new Date();
-    if (today.getMinutes() % 10 === 0) {
-      alert("Going to talk!");
+    if (today.getMinutes() === 0) {
       responsiveVoice.speak("The current temperature is " + temp + " degrees.", "Australian Female");
     }
     
@@ -85,12 +82,12 @@ function updateCityName() {
 // });
 
 $.fn.extend({
-    animateCss: function (animationName) {
-        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        $(this).addClass('animated ' + animationName).one(animationEnd, function() {
-            $(this).removeClass('animated ' + animationName);
-        });
-    }
+  animateCss: function (animationName) {
+    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+    $(this).addClass('animated ' + animationName).one(animationEnd, function() {
+      $(this).removeClass('animated ' + animationName);
+    });
+  }
 });
 
 
